@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <section class="login">
+      <div class="container login__container">
+        <form action="post" class="login__form">
+          <img class="login__icon" src="/img/logo-light.svg" alt="logo" />
+
+          <div class="username__box">
+            <label for="username" class="username__label"></label>
+            <input
+              type="text"
+              class="username__input form__inputs"
+              name="username"
+              placeholder="Username"
+              value="eve.holt@reqres.in"
+            />
+          </div>
+
+          <div class="username__box">
+            <label
+              for="password"
+              class="password__label username__label"
+            ></label>
+
+            <input
+              type="password"
+              class="password__input form__inputs"
+              name="password"
+              placeholder="password"
+              value="cityslicka"
+            />
+          </div>
+
+          <button type="submit" class="login__btn">login</button>
+          <button type="button" class="forget__btn">Forgot password?</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="/js/login.js"></script>
+  </body>
+</html>

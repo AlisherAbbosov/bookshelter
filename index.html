@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__top">
+          <img
+            class="header__logo"
+            src="./img/logo-dark.svg"
+            alt="Site's logo"
+          />
+
+          <form class="search__form">
+            <label for="search__input" class="search__label"></label>
+            <input
+              type="text"
+              class="search__input"
+              name="search__input"
+              placeholder="Search books"
+            />
+          </form>
+
+          <button class="logout__btn">Logout</button>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container header__bottom-box">
+          <p class="results">Showing <span class="result">0</span> Result(s)</p>
+          <button class="newest__btn">
+            <img
+              class="newest__icon"
+              src="/img/calendar-logo.svg"
+              alt="calendar-logo"
+            />
+            Order by newest
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="bookmark__box"></div>
+      <div class="result__box"></div>
+    </main>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

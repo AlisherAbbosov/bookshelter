@@ -1,0 +1,117 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1250px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login {
+  background-image: url("../img/login-bg.jpg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.login__icon {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.login__form {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: end;
+}
+
+.form__inputs {
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background: none;
+  font-size: 14px;
+  width: 100%;
+  padding: 13px 51px;
+  color: #ffffff;
+}
+
+.username__input {
+  margin-bottom: 20px;
+}
+
+.username__box {
+  position: relative;
+}
+.username__label {
+  background-image: url("../img/username-icon.svg");
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 12px;
+  left: 13px;
+}
+
+.password__label {
+  background-image: url("../img/password-icon.svg");
+}
+
+.password__input {
+  margin-bottom: 43px;
+}
+
+.form__inputs::placeholder {
+  font-family: "Montserrat", sans-serif;
+  line-height: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.login__btn {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 13px 123px;
+  display: block;
+  color: #0d75ff;
+  margin-bottom: 11px;
+  cursor: pointer;
+}
+
+.forget__btn {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background: none;
+  border: none;
+  text-align: right;
+  cursor: pointer;
+}

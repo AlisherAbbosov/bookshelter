@@ -1,0 +1,129 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f8fafd;
+}
+
+.container {
+  max-width: 1250px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  /* box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1); */
+}
+
+/* .header {
+} */
+
+.header__top {
+  padding: 13px 0;
+  background: #ffffff;
+  display: flex;
+}
+
+.header__logo {
+  margin-right: 56px;
+}
+
+.search__form {
+  position: relative;
+}
+
+.search__label {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  background-image: url("/img/search-logo.svg");
+  top: 15px;
+  left: 16px;
+}
+
+.search__input {
+  background: #f8fafd;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  border: none;
+  padding: 17px 48px;
+  width: 670px;
+
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.search__input::placeholder {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.24);
+}
+.search__input:focus {
+  outline: none;
+}
+
+.logout__btn {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  background: #0d75ff;
+  border-radius: 4px;
+  border: none;
+  padding: 11px 23px;
+  color: #ffffff;
+  margin-left: auto;
+}
+
+/* Header bottom */
+
+.header__bottom {
+  background: #ffffff;
+  padding: 11px 0;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+}
+
+.header__bottom-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.results {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: inline;
+  margin-left: 300px;
+  color: #222531;
+}
+
+.newest__btn {
+  padding: 5px 13px;
+  background: #a6b0c3;
+  border-radius: 4px;
+
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.newest__icon {
+  margin-right: 5px;
+}
