@@ -11,22 +11,27 @@ body {
   background: #f8fafd;
 }
 
-.container {
-  max-width: 1250px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  /* box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1); */
+button {
+  cursor: pointer;
 }
 
-/* .header {
-} */
+.container {
+  max-width: 1250px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  margin-bottom: 2px;
+}
 
 .header__top {
-  padding: 13px 0;
+  padding: 13px 40px 13px 25px;
   background: #ffffff;
   display: flex;
+  align-items: center;
 }
 
 .header__logo {
@@ -66,6 +71,7 @@ body {
   line-height: 15px;
   color: rgba(0, 0, 0, 0.24);
 }
+
 .search__input:focus {
   outline: none;
 }
@@ -87,12 +93,9 @@ body {
 /* Header bottom */
 
 .header__bottom {
+  padding: 11px 40px 11px 25px;
   background: #ffffff;
-  padding: 11px 0;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
-}
-
-.header__bottom-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -121,9 +124,185 @@ body {
   align-items: center;
   color: #ffffff;
   border: none;
-  cursor: pointer;
 }
 
 .newest__icon {
   margin-right: 5px;
+}
+
+/* Main */
+
+.main__container {
+  display: flex;
+}
+
+.bookmark__box {
+  background: #ffffff;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
+  width: 268px;
+  height: 100vh;
+  padding: 25px;
+}
+
+.bookmark__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.bookmark__text {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155.6%;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.bookmark__list {
+  list-style: none;
+}
+
+.bookmark__item {
+  display: flex;
+  background: #f8fafd;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+}
+
+.bookmarked__name {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.bookmarked__author {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+}
+
+.bookmark__icons {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+}
+
+.read__icon {
+  background-image: url("/img/openbook-logo.svg");
+  margin-right: 5px;
+}
+
+.delete__icon {
+  background-image: url("/img/delete-logo.svg ");
+}
+
+/* Render result */
+.result__box {
+  padding: 35px;
+}
+
+.books__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 33px;
+}
+
+.books__item {
+  width: 282px;
+}
+
+.card {
+  padding: 13px 15px 13px 18px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.card__img-box {
+  padding: 18px 28px 18px 20px;
+  background: #f8fafd;
+  border-radius: 5px;
+}
+
+.card__img {
+  border-radius: 5px;
+  height: 201px;
+  width: 201px;
+}
+
+.card__body {
+  padding: 19px 0 0 3px;
+}
+
+.book__name {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+.book__texts {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+}
+
+.book__year {
+  margin-bottom: 10px;
+}
+
+.book__btn-box {
+  flex-wrap: wrap;
+}
+
+.card__btns-top {
+  border-radius: 4px;
+  padding: 10px 27px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+}
+
+.bookmark__btn {
+  background: #ffd80d;
+  color: #000000;
+}
+
+.info__btn {
+  color: #0d75ff;
+  background: rgba(13, 117, 255, 0.05);
+}
+
+.read__btn {
+  margin-top: 5px;
+  background: #75828a;
+  border-radius: 4px;
+  font-family: "Rubik", sans-serif;
+  padding: 10px 105px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  border: none;
 }
